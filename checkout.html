@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | The Weavura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Jost', sans-serif;
+            --color-maroon: #800020;
+            --color-bg: #fdfbf7;
+        }
+        
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .bg-maroon {
+            background-color: var(--color-maroon);
+        }
+        
+        .text-maroon {
+            color: var(--color-maroon);
+        }
+        
+        .border-maroon {
+            border-color: var(--color-maroon);
+        }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] text-gray-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Header (Simplified) -->
+    <header class="border-b border-gray-100 bg-white">
+        <div class="container mx-auto px-4 py-6 flex justify-center items-center">
+            <a href="/" class="text-3xl md:text-4xl font-normal serif-font text-maroon tracking-widest uppercase">The Weavura</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-16 max-w-3xl">
+        <div class="bg-white p-8 md:p-12 shadow-sm border border-gray-100">
+            <div class="text-center mb-10">
+                <i class="fas fa-lock text-gray-300 text-3xl mb-4"></i>
+                <h1 class="text-3xl serif-font font-medium text-gray-900 mb-2">Secure Checkout</h1>
+                <p class="text-gray-500 font-light">Please enter your details to complete your order.</p>
+            </div>
+            
+            <form id="checkout-form" class="space-y-6">
+                <div>
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-900 mb-4 border-b border-gray-100 pb-2">Contact Information</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition" placeholder="you@example.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-900 mb-4 border-b border-gray-100 pb-2">Shipping Address</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1">First Name</label>
+                            <input type="text" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1">Last Name</label>
+                            <input type="text" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-medium text-gray-700 mb-1">Address</label>
+                            <input type="text" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-medium text-gray-700 mb-1">Apartment, suite, etc. (optional)</label>
+                            <input type="text" class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1">City</label>
+                            <input type="text" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-700 mb-1">Postal Code</label>
+                            <input type="text" required class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                    </div>
+                </div>
+                <div id="form-actions" class="pt-8 text-center">
+                    <button type="submit" class="w-full bg-maroon text-white py-4 uppercase text-sm font-semibold tracking-widest hover:bg-gray-900 transition shadow-md">Continue to Payment</button>
+                    <a href="/" class="inline-block mt-4 text-sm text-gray-500 hover:text-maroon underline">Return to Cart</a>
+                </div>
+            </form>
+
+            <!-- Payment Section (Hidden initially) -->
+            <div id="payment-section" class="hidden space-y-6">
+                <div class="mb-8 border border-green-200 bg-green-50 p-4 rounded-md flex items-start">
+                    <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                    <div>
+                        <h3 class="text-sm font-semibold text-green-800">Shipping Details Saved</h3>
+                        <p class="text-xs text-green-700 mt-1">We've securely saved your shipping address.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-900 mb-4 border-b border-gray-100 pb-2">Payment Method</h2>
+                <p class="text-xs text-gray-500 mb-4">All transactions are secure and encrypted.</p>
+                
+                <div class="border border-gray-200 rounded-md overflow-hidden">
+                    <!-- Credit Card Option -->
+                    <div class="p-4 border-b border-gray-200 bg-gray-50 flex items-center justify-between cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="payment" id="pay-card" checked class="accent-maroon">
+                            <label for="pay-card" class="text-sm font-medium text-gray-900 cursor-pointer">Credit / Debit Card</label>
+                        </div>
+                        <div class="flex gap-1 text-gray-400">
+                            <i class="fab fa-cc-visa text-xl"></i>
+                            <i class="fab fa-cc-mastercard text-xl"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Details Form -->
+                    <div id="card-details-form" class="p-4 bg-white space-y-4">
+                        <div>
+                            <input type="text" required placeholder="Card number" class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" required placeholder="Expiration date (MM / YY)" class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                            <input type="text" required placeholder="Security code" class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                        <div>
+                            <input type="text" required placeholder="Name on card" class="w-full border border-gray-200 p-3 text-sm focus:outline-none focus:border-maroon transition">
+                        </div>
+                    </div>
+
+                    <!-- UPI Option -->
+                    <div class="p-4 border-t border-gray-200 bg-white flex items-center gap-3 cursor-pointer">
+                        <input type="radio" name="payment" id="pay-upi" class="accent-maroon">
+                        <label for="pay-upi" class="text-sm font-medium text-gray-900 cursor-pointer">UPI (GPay, PhonePe, Paytm)</label>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-md overflow-hidden mt-4">
+                    <!-- Cash on Delivery Option -->
+                    <div class="p-4 bg-white flex flex-col cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="payment" id="pay-cod" class="accent-maroon">
+                            <label for="pay-cod" class="text-sm font-medium text-gray-900 cursor-pointer">Cash on Delivery (COD)</label>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2 ml-7">Pay with cash upon delivery. Please have the exact amount ready.</p>
+                    </div>
+                </div>
+
+                <div class="pt-8 text-center">
+                    <button id="place-order-btn" type="button" class="w-full bg-maroon text-white py-4 uppercase text-sm font-semibold tracking-widest hover:bg-gray-900 transition shadow-md">Pay Now & Place Order</button>
+                    <a href="javascript:void(0)" id="back-to-shipping" class="inline-block mt-4 text-sm text-gray-500 hover:text-maroon underline">Return to Shipping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-100 py-8 text-center">
+        <p class="text-xs text-gray-400">&copy; 2026 The Weavura. Secure Checkout.</p>
+    </footer>
+
+    <script>
+        const checkoutForm = document.getElementById('checkout-form');
+        const paymentSection = document.getElementById('payment-section');
+        const backToShipping = document.getElementById('back-to-shipping');
+        const placeOrderBtn = document.getElementById('place-order-btn');
+        
+        // Payment UI Toggles
+        const payCard = document.getElementById('pay-card');
+        const payUpi = document.getElementById('pay-upi');
+        const payCod = document.getElementById('pay-cod');
+        const cardDetails = document.getElementById('card-details-form');
+
+        function updatePaymentUI() {
+            if (payCard.checked) {
+                cardDetails.classList.remove('hidden');
+                placeOrderBtn.innerText = "Pay Now & Place Order";
+            } else {
+                cardDetails.classList.add('hidden');
+                placeOrderBtn.innerText = "Complete Order";
+            }
+        }
+
+        payCard.addEventListener('change', updatePaymentUI);
+        payUpi.addEventListener('change', updatePaymentUI);
+        payCod.addEventListener('change', updatePaymentUI);
+
+        checkoutForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            checkoutForm.classList.add('hidden');
+            paymentSection.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        backToShipping.addEventListener('click', () => {
+            paymentSection.classList.add('hidden');
+            checkoutForm.classList.remove('hidden');
+        });
+
+        placeOrderBtn.addEventListener('click', () => {
+            const paymentMethod = document.querySelector('input[name="payment"]:checked').id;
+            let msg = '🎉 Order placed successfully!';
+            
+            if (paymentMethod === 'pay-cod') {
+                msg += '\n\nYou selected Cash on Delivery. Please have the cash ready when your package arrives.';
+            } else if (paymentMethod === 'pay-upi') {
+                msg += '\n\nPlease check your UPI app to complete the transaction.';
+            }
+            
+            alert(msg + '\n\nThank you for shopping with The Weavura.');
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>
