@@ -39,6 +39,16 @@
             background-size: cover;
             background-position: center;
             height: 650px;
+            width: 100%;
+        }
+
+        /* Mobile responsiveness for hero image with embedded text */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-image: url('hero-bg-mobile.jpg');
+                height: 115vw; /* Portrait aspect ratio for mobile */
+                background-position: center; 
+            }
         }
 
         .product-card:hover .product-img {
