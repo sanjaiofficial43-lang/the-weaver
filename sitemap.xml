@@ -49,4 +49,64 @@
     <priority>0.6</priority>
   </url>
 
-</urlset>
+\n  <!-- Products -->\n
+  <url>
+    <loc>https://theweavura.in/product/maroon-green-handloom-cotton-saree</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/red-green-checked-handloom-cotton-saree</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/green-handloom-cotton-saree-pink-temple-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/navy-blue-handloom-cotton-saree-green-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/magenta-handloom-cotton-saree-peacock-motif</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/lime-green-handloom-cotton-saree-navy-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/deep-maroon-handloom-cotton-saree-thread-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/teal-blue-handloom-cotton-saree-crimson-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/grey-handloom-cotton-saree-red-elephant-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theweavura.in/product/pink-handloom-cotton-saree-chariot-border</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>\n</urlset>

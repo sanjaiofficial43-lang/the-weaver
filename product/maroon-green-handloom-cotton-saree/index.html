@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beautiful maroon and green handloom cotton saree directly woven by our family in Madurai. Features authentic thread borders and a comfortable drape.">
+    <title>Maroon & Green Handloom Cotton Saree | The Weavura</title>
+    <meta name="google-site-verification" content="rXUwhoizlkChEJ-9qhmsoWdjBPgUV6GyZp1cfGZ-kRA" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
+        
+        :root {
+            --maroon: #540C0C;
+            --gold: #C09C3C;
+            --color-bg: #FBF7F0;
+            --color-text: #2A2320;
+            --color-accent: #540C0C;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+        
+        h1, h2, h3, h4, h5, h6, .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .bg-maroon { background-color: var(--maroon); }
+        .text-maroon { color: var(--maroon); }
+        .border-maroon { border-color: var(--maroon); }
+        
+        .bg-gold { background-color: var(--gold); }
+        .text-gold { color: var(--gold); }
+        
+        .hero-section {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            width: 100%;
+        }
+
+        /* Mobile responsiveness for hero image with embedded text */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-image: url('hero-bg-mobile.jpg');
+                height: 115vw; /* Portrait aspect ratio for mobile */
+                background-position: center; 
+            }
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <meta property="og:title" content="Maroon & Green Handloom Cotton Saree | The Weavura">
+    <meta property="og:description" content="A beautiful maroon and green handloom cotton saree directly woven by our family in Madurai. Features authentic thread borders and a comfortable drape.">
+    <meta property="og:image" content="https://www.theweavura.in/saree-1.jpg">
+    <meta property="og:url" content="https://www.theweavura.in/product/maroon-green-handloom-cotton-saree">
+    <meta property="og:type" content="product">
+    <link rel="canonical" href="https://www.theweavura.in/product/maroon-green-handloom-cotton-saree">
+    
+</head>
+<body class="antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-maroon text-white text-[11px] md:text-xs py-2 px-6 flex justify-between items-center tracking-widest font-light">
+        <div class="container mx-auto max-w-7xl flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fab fa-envira"></i> <span>100% Handloom</span>
+            </div>
+            <div class="hidden md:flex items-center gap-2">
+                <i class="fas fa-map-marker-alt"></i> <a href="/store" class="hover:underline">Visit Our Store in Madurai</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-truck"></i> <span>Worldwide Shipping</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-[#f4ebe1] sticky top-0 z-50 border-b border-[#e5dccf]">
+        <div class="container mx-auto px-6 py-6 flex items-center justify-between max-w-7xl">
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="w-1/4 md:hidden">
+                <button id="hamburger-btn" class="text-maroon text-xl"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <!-- Empty Left space for balance on desktop -->
+            <div class="w-1/4 hidden md:flex gap-4">
+            </div>
+            
+            <!-- Logo (Center) -->
+            <div class="w-1/2 md:w-2/4 text-center">
+                <a href="/" class="text-3xl md:text-5xl font-normal serif-font text-maroon tracking-widest uppercase">The Weavura</a>
+            </div>
+            
+            <!-- Icons & Search (Right) -->
+            <div class="w-1/4 flex justify-end items-center gap-5 md:gap-6 text-maroon">
+                <a href="javascript:void(0)" id="search-icon" class="hover:opacity-70 transition"><i class="fas fa-search text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="account-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-user text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="wishlist-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-heart text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="envelope-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-envelope text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="cart-icon" class="hover:opacity-70 transition relative mt-1">
+                    <i class="fas fa-shopping-bag text-xl font-light"></i>
+                    <span id="cart-count" class="absolute -top-1 -right-2 bg-maroon text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center border border-[#f4ebe1]">0</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="hidden md:block pb-5">
+            <ul class="flex justify-center gap-10 text-[11px] font-medium text-maroon/80 uppercase tracking-[0.15em]">
+                <li><a href="/collections/handloom-cotton-sarees" class="hover:text-maroon transition">Handloom Cotton Sarees</a></li>
+                <li><a href="/collections/new-arrivals" class="hover:text-maroon transition">New Arrivals</a></li>
+                <li><a href="/collections/bestsellers" class="hover:text-maroon transition">Bestsellers</a></li>
+                <!-- TODO: Create pages and unhide these when enough products exist: 
+                <li><a href="/collections/temple-border-cotton-sarees" class="hover:text-maroon transition">Temple Border</a></li>
+                <li><a href="/collections/checked-cotton-sarees" class="hover:text-maroon transition">Checked Sarees</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Maroon & Green Handloom Cotton Saree",
+  "image": [
+    "https://www.theweavura.in/saree-1.jpg",
+    "https://www.theweavura.in/saree-2.jpg"
+  ],
+  "description": "A beautiful maroon and green handloom cotton saree directly woven by our family in Madurai. Features authentic thread borders and a comfortable drape.",
+  "sku": "WVR-COT-001",
+  "brand": {
+    "@type": "Brand",
+    "name": "The Weavura"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.theweavura.in/product/maroon-green-handloom-cotton-saree",
+    "priceCurrency": "INR",
+    "price": 2790,
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>
+    
+    <div class="bg-gray-50 py-4 border-b border-gray-200">
+        <div class="container mx-auto px-6 max-w-7xl text-sm text-gray-500 font-light tracking-wide">
+            <a href="/" class="hover:text-maroon">Home</a> 
+            <span class="mx-2">></span> 
+            <a href="/collections/handloom-cotton-sarees" class="hover:text-maroon">Handloom Cotton Sarees</a> 
+            <span class="mx-2">></span> 
+            <span class="text-gray-900">Maroon & Green Handloom Cotton Saree</span>
+        </div>
+    </div>
+    
+    <main class="container mx-auto px-6 py-12 max-w-7xl">
+        <div class="flex flex-col md:flex-row gap-12">
+            <!-- Image Gallery -->
+            <div class="w-full md:w-1/2">
+                
+        <img src="/saree-1.jpg" alt="Maroon and green handloom cotton saree front view" class="w-full h-auto object-cover rounded-md mb-4 shadow-sm" loading="lazy">
+    
+        <img src="/saree-2.jpg" alt="Maroon and green handloom cotton saree thread border detail" class="w-full h-auto object-cover rounded-md mb-4 shadow-sm" loading="lazy">
+    
+            </div>
+            
+            <!-- Product Details -->
+            <div class="w-full md:w-1/2 md:sticky md:top-24 h-max">
+                <h1 class="text-4xl md:text-5xl font-medium serif-font text-gray-900 mb-4">Maroon & Green Handloom Cotton Saree</h1>
+                
+        <div class="flex items-center gap-4 mb-6">
+            <span class="text-3xl font-medium text-maroon">Rs. 2,790.00</span>
+            <span class="text-xl text-gray-400 line-through">Rs. 8,200.00</span>
+        </div>
+                
+                <p class="text-gray-600 font-light text-lg mb-8 leading-relaxed">
+                    A beautiful maroon and green handloom cotton saree directly woven by our family in Madurai. Features authentic thread borders and a comfortable drape.
+                </p>
+
+                <div class="bg-gray-50 p-6 rounded-md mb-8">
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-900 mb-4">Specifications</h3>
+                    <ul class="space-y-3 text-sm text-gray-600 font-light">
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Fabric:</span> <span>Cotton</span></li>
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Weave:</span> <span>Handloom</span></li>
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Colour:</span> <span>Maroon & Green</span></li>
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Length:</span> <span>6.75 metres</span></li>
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Blouse:</span> <span>Attached, unstitched</span></li>
+                        <li class="flex"><span class="w-1/3 font-medium text-gray-900">Border:</span> <span>Thread Border</span></li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <label for="qty" class="text-sm font-medium uppercase tracking-widest">Quantity</label>
+                        <input type="number" id="qty" value="1" min="1" class="border border-gray-300 w-16 px-3 py-2 text-center rounded-sm">
+                    </div>
+                    
+                    
+                    <div class="flex flex-col gap-4">
+                        <button class="w-full bg-maroon text-white uppercase tracking-widest font-semibold py-4 hover:bg-gray-900 transition duration-300">Add to Cart</button>
+                        <button class="w-full bg-gray-900 text-white uppercase tracking-widest font-semibold py-4 hover:bg-maroon transition duration-300">Buy Now</button>
+                    </div>
+                    
+                </div>
+
+                <div class="text-sm font-light text-gray-500 flex flex-col gap-2 border-t border-gray-200 pt-6">
+                    <p><i class="fas fa-truck w-5 text-center"></i> Available online with worldwide shipping</p>
+                    <p><i class="fas fa-map-marker-alt w-5 text-center"></i> Available at our Madurai store</p>
+                    <p><i class="fas fa-undo w-5 text-center"></i> 7-day exchange policy for unused items</p>
+                </div>
+            </div>
+        </div>
+    </main>
+                addToCartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const productCard = button.closest('.product-card');
+                    
+                    // Extract info from DOM
+                    const productName = productCard ? productCard.querySelector('h3').innerText : 'Handloom Saree';
+                    
+                    // Extract price safely (ignoring "Rs." and commas)
+                    const priceText = productCard ? productCard.querySelector('.flex.justify-center span').innerText : '0';
+                    const priceMatch = priceText.replace(/,/g, '').match(/\d+(\.\d+)?/);
+                    const price = priceMatch ? parseFloat(priceMatch[0]) : 0;
+                    
+                    // Get image src
+                    const imgEl = productCard ? productCard.querySelector('.product-img') : null;
+                    const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+                    
+                    // Add to cart array
+                    cartItems.push({
+                        name: productName,
+                        price: price,
+                        img: imgSrc
+                    });
+                    
+                    updateCartUI();
+                    
+                    // Automatically open cart to show the user it was added!
+                    openCart();
+                });
+            });
+
+            
+            // Header Icon Event Listeners
+            const searchIcon = document.getElementById('search-icon');
+            const accountIcon = document.getElementById('account-icon');
+            const wishlistIcon = document.getElementById('wishlist-icon');
+            const envelopeIcon = document.getElementById('envelope-icon');
+            
+            if(searchIcon) searchIcon.addEventListener('click', () => alert('Search functionality coming soon!'));
+            if(accountIcon) accountIcon.addEventListener('click', () => alert('Account Dashboard coming soon!'));
+            if(wishlistIcon) wishlistIcon.addEventListener('click', () => alert('Wishlist feature coming soon!'));
+            if(envelopeIcon) envelopeIcon.addEventListener('click', () => alert('Contact/Newsletter feature coming soon!'));
+
+            // Mobile Menu Logic
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function openMobileMenu() {
+                mobileMenuOverlay.classList.remove('hidden');
+                setTimeout(() => mobileMenuOverlay.classList.remove('opacity-0'), 10);
+                mobileMenu.classList.remove('-translate-x-full');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeMobileMenu() {
+                mobileMenuOverlay.classList.add('opacity-0');
+                mobileMenu.classList.add('-translate-x-full');
+                setTimeout(() => mobileMenuOverlay.classList.add('hidden'), 300);
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
+            if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+            if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Initialize cart UI on load
+            updateCartUI();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+[
+  {
+    "id": "1",
+    "slug": "maroon-green-handloom-cotton-saree",
+    "name": "Maroon & Green Handloom Cotton Saree",
+    "category": ["Handloom Sarees", "Cotton Sarees", "New Arrivals"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Maroon & Green",
+    "price": 8200,
+    "salePrice": 2790,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-001",
+    "description": "A beautiful maroon and green handloom cotton saree directly woven by our family in Madurai. Features authentic thread borders and a comfortable drape.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Thread Border",
+    "images": [
+      "saree-1.jpg",
+      "saree-2.jpg"
+    ],
+    "altText": [
+      "Maroon and green handloom cotton saree front view",
+      "Maroon and green handloom cotton saree thread border detail"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "red-green-checked-handloom-cotton-saree",
+    "name": "Red & Green Checked Handloom Cotton Saree",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Checked Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Red & Green",
+    "price": 2420,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-002",
+    "description": "Traditional red and green checked pattern woven in pure cotton.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Simple Border",
+    "images": [
+      "saree-check-1.jpg",
+      "saree-check-2.jpg"
+    ],
+    "altText": [
+      "Red and green checked handloom cotton saree front view",
+      "Red and green checked handloom cotton saree border detail"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "green-handloom-cotton-saree-pink-temple-border",
+    "name": "Green Handloom Cotton Saree with Pink Temple Border",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Temple Border Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Green & Pink",
+    "price": 3120,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-003",
+    "description": "Elegant green handloom cotton saree finished with a striking pink temple border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Pink Temple Border",
+    "images": [
+      "saree-green-1.jpg",
+      "saree-green-3.jpg",
+      "saree-green-2.jpg"
+    ],
+    "altText": [
+      "Green handloom cotton saree front view",
+      "Green handloom cotton saree pallu detail",
+      "Green handloom cotton saree pink temple border close up"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "navy-blue-handloom-cotton-saree-green-border",
+    "name": "Navy Blue Handloom Cotton Saree with Green Border",
+    "category": ["Handloom Sarees", "Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Navy Blue & Green",
+    "price": 3040,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-004",
+    "description": "Deep navy blue cotton saree contrasted beautifully with a vivid green woven border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Green Woven Border",
+    "images": [
+      "saree-blue-1.jpg",
+      "saree-blue-2.jpg"
+    ],
+    "altText": [
+      "Navy blue handloom cotton saree front view",
+      "Navy blue handloom cotton saree green border detail"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "magenta-handloom-cotton-saree-peacock-motif",
+    "name": "Magenta Handloom Cotton Saree with Peacock Motif",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Festive Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Magenta",
+    "price": 3240,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-005",
+    "description": "Vibrant magenta cotton saree woven with intricate traditional peacock motifs.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Peacock Motif Border",
+    "images": [
+      "saree-magenta-peacock-1.jpg",
+      "saree-magenta-peacock-2.jpg"
+    ],
+    "altText": [
+      "Magenta handloom cotton saree with peacock motifs front view",
+      "Magenta handloom cotton saree peacock motif close up"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "lime-green-handloom-cotton-saree-navy-border",
+    "name": "Lime Green Handloom Cotton Saree with Navy Border",
+    "category": ["Handloom Sarees", "Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Lime Green & Navy",
+    "price": 2840,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-006",
+    "description": "Fresh lime green handloom saree highlighted with a dark navy border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Navy Border",
+    "images": [
+      "saree-lime-1.jpg",
+      "saree-lime-2.jpg"
+    ],
+    "altText": [
+      "Lime green handloom cotton saree front view",
+      "Lime green handloom cotton saree navy border detail"
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "deep-maroon-handloom-cotton-saree-thread-border",
+    "name": "Deep Maroon Handloom Cotton Saree with Thread Border",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Festive Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Deep Maroon",
+    "price": 3620,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-007",
+    "description": "Rich deep maroon handloom cotton saree woven with an elegant thread border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Thread Border",
+    "images": [
+      "saree-red-silver-1.jpg",
+      "saree-red-silver-2.jpg"
+    ],
+    "altText": [
+      "Deep maroon handloom cotton saree front view",
+      "Deep maroon handloom cotton saree thread border detail"
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "teal-blue-handloom-cotton-saree-crimson-border",
+    "name": "Teal Blue Handloom Cotton Saree with Crimson Border",
+    "category": ["Handloom Sarees", "Cotton Sarees"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Teal Blue & Crimson",
+    "price": 2950,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-008",
+    "description": "A beautiful contrast of teal blue body with a crimson red border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Crimson Border",
+    "images": [
+      "saree-blue-red-1.jpg",
+      "saree-blue-red-2.jpg",
+      "saree-blue-red-3.jpg"
+    ],
+    "altText": [
+      "Teal blue handloom cotton saree front view",
+      "Teal blue handloom cotton saree crimson border detail",
+      "Teal blue handloom cotton saree pallu"
+    ]
+  },
+  {
+    "id": "9",
+    "slug": "grey-handloom-cotton-saree-red-elephant-border",
+    "name": "Grey Handloom Cotton Saree with Red Elephant Border",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Bestsellers"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Grey & Red",
+    "price": 8000,
+    "salePrice": 2300,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-009",
+    "description": "Subtle grey cotton saree accented with a traditional red elephant motif border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Red Elephant Border",
+    "images": [
+      "saree-elephant-1.jpg",
+      "saree-elephant-2.jpg",
+      "saree-elephant-3.jpg"
+    ],
+    "altText": [
+      "Grey handloom cotton saree front view",
+      "Grey handloom cotton saree red elephant border detail",
+      "Grey handloom cotton saree pallu"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "pink-handloom-cotton-saree-chariot-border",
+    "name": "Pink Handloom Cotton Saree with Chariot Border",
+    "category": ["Handloom Sarees", "Cotton Sarees", "Bestsellers"],
+    "fabric": "Cotton",
+    "weavingType": "Handloom",
+    "colour": "Pink",
+    "price": 4080,
+    "salePrice": null,
+    "stockStatus": "In Stock",
+    "sku": "WVR-COT-010",
+    "description": "Delicate pink cotton saree woven with an intricate chariot border.",
+    "sareeLength": "6.75 metres",
+    "blouseIncluded": true,
+    "borderDetails": "Chariot Border",
+    "images": [
+      "saree-pink-1.jpg",
+      "saree-pink-2.jpg",
+      "saree-pink-3.jpg"
+    ],
+    "altText": [
+      "Pink handloom cotton saree front view",
+      "Pink handloom cotton saree chariot border detail",
+      "Pink handloom cotton saree pallu"
+    ]
+  }
+]

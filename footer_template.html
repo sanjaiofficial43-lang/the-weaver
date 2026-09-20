@@ -1,0 +1,79 @@
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const productCard = button.closest('.product-card');
+                    
+                    // Extract info from DOM
+                    const productName = productCard ? productCard.querySelector('h3').innerText : 'Handloom Saree';
+                    
+                    // Extract price safely (ignoring "Rs." and commas)
+                    const priceText = productCard ? productCard.querySelector('.flex.justify-center span').innerText : '0';
+                    const priceMatch = priceText.replace(/,/g, '').match(/\d+(\.\d+)?/);
+                    const price = priceMatch ? parseFloat(priceMatch[0]) : 0;
+                    
+                    // Get image src
+                    const imgEl = productCard ? productCard.querySelector('.product-img') : null;
+                    const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+                    
+                    // Add to cart array
+                    cartItems.push({
+                        name: productName,
+                        price: price,
+                        img: imgSrc
+                    });
+                    
+                    updateCartUI();
+                    
+                    // Automatically open cart to show the user it was added!
+                    openCart();
+                });
+            });
+
+            
+            // Header Icon Event Listeners
+            const searchIcon = document.getElementById('search-icon');
+            const accountIcon = document.getElementById('account-icon');
+            const wishlistIcon = document.getElementById('wishlist-icon');
+            const envelopeIcon = document.getElementById('envelope-icon');
+            
+            if(searchIcon) searchIcon.addEventListener('click', () => alert('Search functionality coming soon!'));
+            if(accountIcon) accountIcon.addEventListener('click', () => alert('Account Dashboard coming soon!'));
+            if(wishlistIcon) wishlistIcon.addEventListener('click', () => alert('Wishlist feature coming soon!'));
+            if(envelopeIcon) envelopeIcon.addEventListener('click', () => alert('Contact/Newsletter feature coming soon!'));
+
+            // Mobile Menu Logic
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function openMobileMenu() {
+                mobileMenuOverlay.classList.remove('hidden');
+                setTimeout(() => mobileMenuOverlay.classList.remove('opacity-0'), 10);
+                mobileMenu.classList.remove('-translate-x-full');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeMobileMenu() {
+                mobileMenuOverlay.classList.add('opacity-0');
+                mobileMenu.classList.add('-translate-x-full');
+                setTimeout(() => mobileMenuOverlay.classList.add('hidden'), 300);
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
+            if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+            if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Initialize cart UI on load
+            updateCartUI();
+        });
+    </script>
+</body>
+</html>

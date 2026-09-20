@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/collections.html", "destination": "/collections/handloom-cotton-sarees", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true }
+  ]
+}
