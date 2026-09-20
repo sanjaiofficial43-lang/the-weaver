@@ -145,13 +145,13 @@ function generateProductHtml(product) {
     `;
 
     // Fix absolute image paths in header/footer (since we're now at /product/slug/)
-    let processedHeader = header.replace(/href="([^"]+\.css)"/g, 'href="/$1"');
-    processedHeader = processedHeader.replace(/src="([^"]+\.js)"/g, 'src="/$1"');
+    
+    
     
     // We don't want to break absolute paths like https://... so only replace ones not starting with http or /
     // Actually Tailwind uses absolute https anyway.
 
-    return processedHeader + body + footerTemplate;
+    return header + body + footerTemplate;
 }
 
 // Ensure directories exist

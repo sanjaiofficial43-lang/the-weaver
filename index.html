@@ -774,5 +774,29 @@
             updateCartUI();
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const link = card.querySelector('h3 a');
+                if (link) {
+                    const url = link.getAttribute('href');
+                    const imgContainer = card.querySelector('.relative.overflow-hidden');
+                    if (imgContainer) {
+                        imgContainer.style.cursor = 'pointer';
+                        imgContainer.addEventListener('click', (e) => {
+                            // Don't navigate if they clicked the Add to Cart button
+                            if (e.target.tagName.toLowerCase() === 'button' || e.target.closest('button')) {
+                                return;
+                            }
+                            window.location.href = url;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
