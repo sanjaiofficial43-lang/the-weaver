@@ -118,3 +118,32 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity opacity-0 duration-300"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-50 transform -translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
+        <div class="flex justify-between items-center p-5 border-b border-gray-100 bg-[#fdfbf7]">
+            <h2 class="text-xl serif-font text-maroon uppercase tracking-widest">Menu</h2>
+            <button id="close-menu-btn" class="text-gray-400 hover:text-gray-800 transition text-3xl font-light">
+                &times;
+            </button>
+        </div>
+        <div class="overflow-y-auto flex-grow py-8 px-6 space-y-8">
+            <ul class="flex flex-col gap-6 text-[11px] font-medium text-gray-800 uppercase tracking-widest">
+                <li><a href="/collections/handloom-cotton-sarees" class="mobile-link block hover:text-maroon transition">Handloom Cotton Sarees</a></li>
+                <li><a href="/collections/new-arrivals" class="mobile-link block hover:text-maroon transition">New Arrivals</a></li>
+                <li><a href="/collections/bestsellers" class="mobile-link block hover:text-maroon transition">Bestsellers</a></li>
+                <!-- TODO: Unhide when enough products exist:
+                <li><a href="/collections/temple-border-cotton-sarees" class="mobile-link block hover:text-maroon transition">Temple Border</a></li>
+                -->
+            </ul>
+            <hr class="border-gray-100">
+            <div class="flex flex-col gap-5 text-gray-600 text-sm">
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-user text-lg w-6 text-center"></i> Account</a>
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-heart text-lg w-6 text-center"></i> Wishlist</a>
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-envelope text-lg w-6 text-center"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
