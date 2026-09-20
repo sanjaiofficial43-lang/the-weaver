@@ -91,7 +91,7 @@ function generateProductHtml(product) {
     ${schemaTag}
     ${breadcrumbs}
     <main class="container mx-auto px-6 py-12 max-w-7xl">
-        <div class="flex flex-col md:flex-row gap-12">
+        <div class="product-card flex flex-col md:flex-row gap-12">
             <!-- Image Gallery -->
             <div class="w-full md:w-1/2">
                 ${imageGallery}
@@ -99,7 +99,12 @@ function generateProductHtml(product) {
             
             <!-- Product Details -->
             <div class="w-full md:w-1/2 md:sticky md:top-24 h-max">
-                <h1 class="text-4xl md:text-5xl font-medium serif-font text-gray-900 mb-4">${product.name}</h1>
+                
+<h1 class="text-4xl md:text-5xl font-medium serif-font text-gray-900 mb-4">${product.name}</h1>
+<h3 class="hidden">${product.name}</h3>
+<div class="flex justify-center hidden"><span>Rs. ${product.salePrice ? product.salePrice : product.price}.00</span></div>
+<img src="/${product.images[0]}" class="product-img hidden" alt="">
+
                 ${priceHtml}
                 
                 <p class="text-gray-600 font-light text-lg mb-8 leading-relaxed">

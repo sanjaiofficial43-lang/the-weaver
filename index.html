@@ -775,28 +775,34 @@
         });
     </script>
 
+    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const cards = document.querySelectorAll('.product-card');
             cards.forEach(card => {
-                const link = card.querySelector('h3 a');
-                if (link) {
-                    const url = link.getAttribute('href');
-                    const imgContainer = card.querySelector('.relative.overflow-hidden');
-                    if (imgContainer) {
-                        imgContainer.style.cursor = 'pointer';
-                        imgContainer.addEventListener('click', (e) => {
-                            // Don't navigate if they clicked the Add to Cart button
-                            if (e.target.tagName.toLowerCase() === 'button' || e.target.closest('button')) {
-                                return;
-                            }
-                            window.location.href = url;
-                        });
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', (e) => {
+                    // Find the link inside this card
+                    const link = card.querySelector('h3 a');
+                    if (!link) return;
+                    
+                    // Don't navigate if they clicked the Add to Cart button
+                    if (e.target.tagName.toLowerCase() === 'button' || e.target.closest('button')) {
+                        return;
                     }
-                }
+                    
+                    // Don't double navigate if they clicked the link itself
+                    if (e.target.tagName.toLowerCase() === 'a' || e.target.closest('a')) {
+                        return;
+                    }
+                    
+                    window.location.href = link.getAttribute('href');
+                });
             });
         });
     </script>
+
 </body>
 
 </html>
