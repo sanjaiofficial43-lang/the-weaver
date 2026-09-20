@@ -1,111 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
   <url>
-    <loc>https://theweavura.in/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.theweavura.in/</loc>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- New Arrivals -->
   <url>
-    <loc>https://theweavura.in/new-arrivals</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.theweavura.in/collections/handloom-cotton-sarees</loc>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Our Promise -->
   <url>
-    <loc>https://theweavura.in/our-promise</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Our Loved Products -->
-  <url>
-    <loc>https://theweavura.in/loved-products</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Shop -->
-  <url>
-    <loc>https://theweavura.in/shop</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.theweavura.in/collections/new-arrivals</loc>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Contact -->
   <url>
-    <loc>https://theweavura.in/contact</loc>
-    <lastmod>2026-09-18</lastmod>
+    <loc>https://www.theweavura.in/collections/bestsellers</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.theweavura.in/about</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
-
-\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  <!-- Products -->\n
   <url>
-    <loc>https://theweavura.in/product/maroon-green-handloom-cotton-saree</loc>
+    <loc>https://www.theweavura.in/store</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.theweavura.in/returns-and-exchanges</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+\n  <!-- Products -->\n
+  <url>
+    <loc>https://www.theweavura.in/product/maroon-green-handloom-cotton-saree</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/red-green-checked-handloom-cotton-saree</loc>
+    <loc>https://www.theweavura.in/product/red-green-checked-handloom-cotton-saree</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/green-handloom-cotton-saree-pink-temple-border</loc>
+    <loc>https://www.theweavura.in/product/green-handloom-cotton-saree-pink-temple-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/navy-blue-handloom-cotton-saree-green-border</loc>
+    <loc>https://www.theweavura.in/product/navy-blue-handloom-cotton-saree-green-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/magenta-handloom-cotton-saree-peacock-motif</loc>
+    <loc>https://www.theweavura.in/product/magenta-handloom-cotton-saree-peacock-motif</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/lime-green-handloom-cotton-saree-navy-border</loc>
+    <loc>https://www.theweavura.in/product/lime-green-handloom-cotton-saree-navy-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/deep-maroon-handloom-cotton-saree-thread-border</loc>
+    <loc>https://www.theweavura.in/product/deep-maroon-handloom-cotton-saree-thread-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/teal-blue-handloom-cotton-saree-crimson-border</loc>
+    <loc>https://www.theweavura.in/product/teal-blue-handloom-cotton-saree-crimson-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/grey-handloom-cotton-saree-red-elephant-border</loc>
+    <loc>https://www.theweavura.in/product/grey-handloom-cotton-saree-red-elephant-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://theweavura.in/product/pink-handloom-cotton-saree-chariot-border</loc>
+    <loc>https://www.theweavura.in/product/pink-handloom-cotton-saree-chariot-border</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

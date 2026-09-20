@@ -3,47 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pure handloom cotton sarees woven by our family in Madurai. Shop online with worldwide shipping or visit our store in Sakkimangalam, Madurai.">
     <title>Returns & Exchanges | The Weavura</title>
+    <meta name="google-site-verification" content="rXUwhoizlkChEJ-9qhmsoWdjBPgUV6GyZp1cfGZ-kRA" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
-        body { font-family: 'Jost', sans-serif; background-color: #FBF7F0; color: #2A2320; }
-        h1, h2, h3, h4, .serif-font { font-family: 'Cormorant Garamond', serif; }
+        
+        :root {
+            --maroon: #540C0C;
+            --gold: #C09C3C;
+            --color-bg: #FBF7F0;
+            --color-text: #2A2320;
+            --color-accent: #540C0C;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+        
+        h1, h2, h3, h4, h5, h6, .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .bg-maroon { background-color: var(--maroon); }
+        .text-maroon { color: var(--maroon); }
+        .border-maroon { border-color: var(--maroon); }
+        
+        .bg-gold { background-color: var(--gold); }
+        .text-gold { color: var(--gold); }
+        
+        .hero-section {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            width: 100%;
+        }
+
+        /* Mobile responsiveness for hero image with embedded text */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-image: url('hero-bg-mobile.jpg');
+                height: 115vw; /* Portrait aspect ratio for mobile */
+                background-position: center; 
+            }
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
     </style>
 </head>
-<body>
-    <div class="bg-gray-50 py-12">
-        <div class="container mx-auto px-6 max-w-4xl bg-white p-8 md:p-12 shadow-sm rounded-sm">
-            <h1 class="text-4xl md:text-5xl font-medium serif-font text-gray-900 mb-8 border-b pb-6">Returns & Exchanges</h1>
-            
-            <p class="mb-6 font-light leading-relaxed text-gray-600">Every Weavura saree is handwoven on our family's loom in Madurai, and we want you to love yours.</p>
-            
-            <h3 class="text-xl font-medium mb-3">Exchanges:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">You can request an exchange within 7 days of delivery, or within 7 days of purchase if you bought in our store. The saree must be unused and unwashed, with its tags intact. We don't offer refunds.</p>
-            
-            <h3 class="text-xl font-medium mb-3">In-store exchanges:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">You can exchange at our Madurai store during opening hours (Monday–Saturday, 10am–6pm). Please bring your bill or order number.</p>
-            
-            <h3 class="text-xl font-medium mb-3">Damaged or wrong item:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">Please record an unboxing video when you open your parcel. If your saree arrives damaged or isn't what you ordered, send the video to us on WhatsApp (+91 99400 59009) or at weavura@gmail.com within 48 hours of delivery. We'll replace it at no cost.</p>
-            
-            <h3 class="text-xl font-medium mb-3">Sale items:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">Sarees bought on sale can't be exchanged.</p>
-            
-            <h3 class="text-xl font-medium mb-3">About handloom:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">Small variations in weave, colour, or texture are natural in handwoven sarees. They are the mark of a handmade piece, not a defect.</p>
-            
-            <h3 class="text-xl font-medium mb-3">Return shipping for exchanges:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600"><!-- TODO: who pays courier costs for non-damaged exchanges, India and international --></p>
-            
-            <h3 class="text-xl font-medium mb-3">How to request an exchange:</h3>
-            <p class="mb-6 font-light leading-relaxed text-gray-600">Message us on WhatsApp or email with your order number and photos of the saree, or visit our store.</p>
-            
-            <div class="mt-12 text-center">
-                <a href="/" class="text-maroon underline tracking-widest uppercase text-sm">&larr; Back to Home</a>
+<body class="antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-maroon text-white text-[11px] md:text-xs py-2 px-6 flex justify-between items-center tracking-widest font-light">
+        <div class="container mx-auto max-w-7xl flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fab fa-envira"></i> <span>100% Handloom</span>
+            </div>
+            <div class="hidden md:flex items-center gap-2">
+                <i class="fas fa-map-marker-alt"></i> <a href="/store" class="hover:underline">Visit Our Store in Madurai</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-truck"></i> <span>Worldwide Shipping</span>
             </div>
         </div>
     </div>
+
+    <!-- Main Header -->
+    <header class="bg-[#f4ebe1] sticky top-0 z-50 border-b border-[#e5dccf]">
+        <div class="container mx-auto px-6 py-6 flex items-center justify-between max-w-7xl">
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="w-1/4 md:hidden">
+                <button id="hamburger-btn" class="text-maroon text-xl"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <!-- Empty Left space for balance on desktop -->
+            <div class="w-1/4 hidden md:flex gap-4">
+            </div>
+            
+            <!-- Logo (Center) -->
+            <div class="w-1/2 md:w-2/4 text-center">
+                <a href="/" class="text-3xl md:text-5xl font-normal serif-font text-maroon tracking-widest uppercase">The Weavura</a>
+            </div>
+            
+            <!-- Icons & Search (Right) -->
+            <div class="w-1/4 flex justify-end items-center gap-5 md:gap-6 text-maroon">
+                <a href="javascript:void(0)" id="search-icon" class="hover:opacity-70 transition"><i class="fas fa-search text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="account-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-user text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="wishlist-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-heart text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="envelope-icon" class="hover:opacity-70 transition hidden md:block"><i class="far fa-envelope text-lg font-light"></i></a>
+                <a href="javascript:void(0)" id="cart-icon" class="hover:opacity-70 transition relative mt-1">
+                    <i class="fas fa-shopping-bag text-xl font-light"></i>
+                    <span id="cart-count" class="absolute -top-1 -right-2 bg-maroon text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center border border-[#f4ebe1]">0</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="hidden md:block pb-5">
+            <ul class="flex justify-center gap-10 text-[11px] font-medium text-maroon/80 uppercase tracking-[0.15em]">
+                <li><a href="/collections/handloom-cotton-sarees" class="hover:text-maroon transition">Handloom Cotton Sarees</a></li>
+                <li><a href="/collections/new-arrivals" class="hover:text-maroon transition">New Arrivals</a></li>
+                <li><a href="/collections/bestsellers" class="hover:text-maroon transition">Bestsellers</a></li>
+                <!-- TODO: Create pages and unhide these when enough products exist: 
+                <li><a href="/collections/temple-border-cotton-sarees" class="hover:text-maroon transition">Temple Border</a></li>
+                <li><a href="/collections/checked-cotton-sarees" class="hover:text-maroon transition">Checked Sarees</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity opacity-0 duration-300"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-50 transform -translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
+        <div class="flex justify-between items-center p-5 border-b border-gray-100 bg-[#fdfbf7]">
+            <h2 class="text-xl serif-font text-maroon uppercase tracking-widest">Menu</h2>
+            <button id="close-menu-btn" class="text-gray-400 hover:text-gray-800 transition text-3xl font-light">
+                &times;
+            </button>
+        </div>
+        <div class="overflow-y-auto flex-grow py-8 px-6 space-y-8">
+            <ul class="flex flex-col gap-6 text-[11px] font-medium text-gray-800 uppercase tracking-widest">
+                <li><a href="/collections/handloom-cotton-sarees" class="mobile-link block hover:text-maroon transition">Handloom Cotton Sarees</a></li>
+                <li><a href="/collections/new-arrivals" class="mobile-link block hover:text-maroon transition">New Arrivals</a></li>
+                <li><a href="/collections/bestsellers" class="mobile-link block hover:text-maroon transition">Bestsellers</a></li>
+                <!-- TODO: Unhide when enough products exist:
+                <li><a href="/collections/temple-border-cotton-sarees" class="mobile-link block hover:text-maroon transition">Temple Border</a></li>
+                -->
+            </ul>
+            <hr class="border-gray-100">
+            <div class="flex flex-col gap-5 text-gray-600 text-sm">
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-user text-lg w-6 text-center"></i> Account</a>
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-heart text-lg w-6 text-center"></i> Wishlist</a>
+                <a href="javascript:void(0)" class="flex items-center gap-3 hover:text-maroon transition"><i class="far fa-envelope text-lg w-6 text-center"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 py-12 min-h-screen">
+        <div class="container mx-auto px-6 max-w-4xl bg-white p-8 md:p-12 shadow-sm rounded-sm">
+            
+    <h1 class="text-4xl md:text-5xl font-medium serif-font text-gray-900 mb-8 border-b pb-6">Returns & Exchanges</h1>
+    <p class="mb-6 font-light leading-relaxed text-gray-600">Every Weavura saree is handwoven on our family's loom in Madurai, and we want you to love yours.</p>
+    <h3 class="text-xl font-medium mb-3">Exchanges:</h3>
+    <p class="mb-6 font-light leading-relaxed text-gray-600">You can request an exchange within 7 days of delivery, or within 7 days of purchase if you bought in our store. The saree must be unused and unwashed, with its tags intact. We don't offer refunds.</p>
+    <h3 class="text-xl font-medium mb-3">In-store exchanges:</h3>
+    <p class="mb-6 font-light leading-relaxed text-gray-600">You can exchange at our Madurai store during opening hours (Monday–Saturday, 10am–6pm). Please bring your bill or order number.</p>
+    <h3 class="text-xl font-medium mb-3">Damaged or wrong item:</h3>
+    <p class="mb-6 font-light leading-relaxed text-gray-600">Please record an unboxing video when you open your parcel. If your saree arrives damaged or isn't what you ordered, send the video to us on WhatsApp (+91 99400 59009) or at weavura@gmail.com within 48 hours of delivery. We'll replace it at no cost.</p>
+
+        </div>
+    </div>
+        <footer class="bg-white border-t border-gray-200 py-16">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-3xl serif-font text-maroon mb-6 uppercase tracking-wider">The Weavura</h2>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Bringing authentic, handcrafted weaves from the looms of India to your wardrobe. Tradition, elegance, and pure craft.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://instagram.com/the_weavura" target="_blank" class="text-gray-400 hover:text-maroon transition flex items-center gap-3"><i class="fab fa-instagram text-xl w-5"></i><span class="text-sm">@the_weavura</span></a>
+                        <a href="https://facebook.com/weavura.weavura" target="_blank" class="text-gray-400 hover:text-maroon transition flex items-center gap-3"><i class="fab fa-facebook text-xl w-5"></i><span class="text-sm">weavura weavura</span></a>
+                    </div>
+                </div>
+                
+                <!-- Shop Links -->
+                <div>
+                    <h4 class="text-gray-900 uppercase tracking-widest text-sm font-semibold mb-5">Shop</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li><a href="/collections/handloom-cotton-sarees" class="hover:text-maroon transition">All Sarees</a></li>
+                        <li><a href="/collections/new-arrivals" class="hover:text-maroon transition">New Arrivals</a></li>
+                        <li><a href="/collections/bestsellers" class="hover:text-maroon transition">Bestsellers</a></li>
+                        <!-- <li><a href="javascript:void(0)" class="hover:text-maroon transition">Premium Collection</a></li> -->
+                    </ul>
+                </div>
+                
+                <!-- Support Links -->
+                <div>
+                    <h4 class="text-gray-900 uppercase tracking-widest text-sm font-semibold mb-5">Support</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <!-- <li><a href="javascript:void(0)" class="hover:text-maroon transition">Track Your Order</a></li> -->
+                        <!-- <li><a href="javascript:void(0)" class="hover:text-maroon transition">Customer Support</a></li> -->
+                        <li><a href="/returns-and-exchanges" class="hover:text-maroon transition">Returns & Exchanges</a></li>
+                        <!-- <li><a href="javascript:void(0)" class="hover:text-maroon transition">Shipping Policy</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-gray-900 uppercase tracking-widest text-sm font-semibold mb-5">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li>Email: weavura@gmail.com</li>
+                        <li>WhatsApp: +91 99400 59009</li>
+                        <li>Hours: Mon-Sat, 10am - 6pm IST</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2026 The Weavura. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <!-- <a href="javascript:void(0)" class="hover:text-gray-600">Privacy Policy</a> -->
+                    <!-- <a href="javascript:void(0)" class="hover:text-gray-600">Terms of Service</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Cart Modal -->
+    <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300"></div>
+    <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full md:w-96 bg-white z-50 transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col">
+        <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+            <h2 class="text-xl serif-font font-medium text-gray-900">Your Cart</h2>
+            <button id="close-cart" class="text-gray-400 hover:text-maroon transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        
+        <div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-6">
+            <!-- Items injected by JS -->
+            <div id="empty-cart-msg" class="text-center text-gray-500 mt-10">
+                <i class="fas fa-shopping-bag text-3xl mb-4 text-gray-300"></i>
+                <p class="font-light">Your cart is currently empty.</p>
+                <button id="continue-shopping" class="mt-6 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-6 py-3 uppercase text-xs tracking-widest transition">Continue Shopping</button>
+            </div>
+        </div>
+        
+        <div id="cart-footer" class="p-5 border-t border-gray-100 hidden bg-white">
+            <div class="flex justify-between mb-4 text-gray-900 font-medium">
+                <span>Subtotal</span>
+                <span id="cart-total">Rs. 0.00</span>
+            </div>
+            <p class="text-[10px] text-gray-500 mb-4 uppercase tracking-widest text-center">Shipping & taxes calculated at checkout</p>
+            <button id="checkout-btn" class="w-full bg-maroon text-white py-4 uppercase text-xs font-semibold tracking-widest hover:bg-gray-900 transition shadow-md">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Cart State
+            let cartItems = [];
+            
+            // DOM Elements
+            const cartCountElement = document.getElementById('cart-count');
+            const cartIcon = document.getElementById('cart-icon');
+            const addToCartButtons = document.querySelectorAll('.product-card button');
+            
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartDrawer = document.getElementById('cart-drawer');
+            const closeCartBtn = document.getElementById('close-cart');
+            const continueShoppingBtn = document.getElementById('continue-shopping');
+            
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMsg = document.getElementById('empty-cart-msg');
+            const cartFooter = document.getElementById('cart-footer');
+            const cartTotal = document.getElementById('cart-total');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            // --- Cart Logic ---
+            
+            function openCart() {
+                cartOverlay.classList.remove('hidden');
+                // Tiny delay to allow display:block to apply before animating opacity
+                setTimeout(() => {
+                    cartOverlay.classList.remove('opacity-0');
+                    cartDrawer.classList.remove('translate-x-full');
+                }, 10);
+            }
+            
+            function closeCart() {
+                cartOverlay.classList.add('opacity-0');
+                cartDrawer.classList.add('translate-x-full');
+                setTimeout(() => {
+                    cartOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            function updateCartUI() {
+                // Update Badge
+                if (cartCountElement) {
+                    cartCountElement.innerText = cartItems.length;
+                }
+                
+                // Clear current items (keep empty msg hidden for now)
+                cartItemsContainer.innerHTML = '';
+                
+                if (cartItems.length === 0) {
+                    cartItemsContainer.appendChild(emptyCartMsg);
+                    cartFooter.classList.add('hidden');
+                } else {
+                    cartFooter.classList.remove('hidden');
+                    let total = 0;
+                    
+                    cartItems.forEach((item, index) => {
+                        total += item.price;
+                        
+                        const itemEl = document.createElement('div');
+                        itemEl.className = 'flex gap-4 border-b border-gray-100 pb-4';
+                        itemEl.innerHTML = `
+                            <div class="w-20 h-24 flex-shrink-0 bg-gray-100">
+                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h4 class="text-sm font-medium text-gray-900 leading-snug">${item.name}</h4>
+                                    <p class="text-xs text-gray-500 mt-1 uppercase">Saree</p>
+                                </div>
+                                <div class="flex justify-between items-center mt-2">
+                                    <span class="text-sm text-gray-900 font-medium">Rs. ${item.price.toLocaleString('en-IN', {minimumFractionDigits: 2})}</span>
+                                    <button class="text-gray-400 hover:text-maroon text-xs underline" data-index="${index}">Remove</button>
+                                </div>
+                            </div>
+                        `;
+                        cartItemsContainer.appendChild(itemEl);
+                    });
+                    
+                    cartTotal.innerText = `Rs. ${total.toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+                    
+                    // Attach remove listeners
+                    const removeBtns = cartItemsContainer.querySelectorAll('button[data-index]');
+                    removeBtns.forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const idx = parseInt(e.target.getAttribute('data-index'));
+                            cartItems.splice(idx, 1);
+                            updateCartUI();
+                        });
+                    });
+                }
+            }
+
+            // --- Event Listeners ---
+            
+            if (cartIcon) {
+                cartIcon.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openCart();
+                });
+            }
+            
+            if (closeCartBtn) {
+                closeCartBtn.addEventListener('click', closeCart);
+            }
+            
+            if (continueShoppingBtn) {
+                continueShoppingBtn.addEventListener('click', closeCart);
+            }
+            
+            if (cartOverlay) {
+                cartOverlay.addEventListener('click', closeCart);
+            }
+            
+            if (checkoutBtn) {
+                checkoutBtn.addEventListener('click', () => {
+                    alert('Proceeding to checkout...');
+                    window.location.href = 'checkout.html';
+                });
+            }
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const productCard = button.closest('.product-card');
+                    
+                    // Extract info from DOM
+                    const productName = productCard ? productCard.querySelector('h3').innerText : 'Handloom Saree';
+                    
+                    // Extract price safely (ignoring "Rs." and commas)
+                    const priceText = productCard ? productCard.querySelector('.flex.justify-center span').innerText : '0';
+                    const priceMatch = priceText.replace(/,/g, '').match(/\d+(\.\d+)?/);
+                    const price = priceMatch ? parseFloat(priceMatch[0]) : 0;
+                    
+                    // Get image src
+                    const imgEl = productCard ? productCard.querySelector('.product-img') : null;
+                    const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+                    
+                    // Add to cart array
+                    cartItems.push({
+                        name: productName,
+                        price: price,
+                        img: imgSrc
+                    });
+                    
+                    updateCartUI();
+                    
+                    // Automatically open cart to show the user it was added!
+                    openCart();
+                });
+            });
+
+            
+            // Header Icon Event Listeners
+            const searchIcon = document.getElementById('search-icon');
+            const accountIcon = document.getElementById('account-icon');
+            const wishlistIcon = document.getElementById('wishlist-icon');
+            const envelopeIcon = document.getElementById('envelope-icon');
+            
+            if(searchIcon) searchIcon.addEventListener('click', () => alert('Search functionality coming soon!'));
+            if(accountIcon) accountIcon.addEventListener('click', () => alert('Account Dashboard coming soon!'));
+            if(wishlistIcon) wishlistIcon.addEventListener('click', () => alert('Wishlist feature coming soon!'));
+            if(envelopeIcon) envelopeIcon.addEventListener('click', () => alert('Contact/Newsletter feature coming soon!'));
+
+            // Mobile Menu Logic
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function openMobileMenu() {
+                mobileMenuOverlay.classList.remove('hidden');
+                setTimeout(() => mobileMenuOverlay.classList.remove('opacity-0'), 10);
+                mobileMenu.classList.remove('-translate-x-full');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeMobileMenu() {
+                mobileMenuOverlay.classList.add('opacity-0');
+                mobileMenu.classList.add('-translate-x-full');
+                setTimeout(() => mobileMenuOverlay.classList.add('hidden'), 300);
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
+            if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+            if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Initialize cart UI on load
+            updateCartUI();
+        });
+    </script>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', (e) => {
+                    // Find the link inside this card
+                    const link = card.querySelector('h3 a');
+                    if (!link) return;
+                    
+                    // Don't navigate if they clicked the Add to Cart button
+                    if (e.target.tagName.toLowerCase() === 'button' || e.target.closest('button')) {
+                        return;
+                    }
+                    
+                    // Don't double navigate if they clicked the link itself
+                    if (e.target.tagName.toLowerCase() === 'a' || e.target.closest('a')) {
+                        return;
+                    }
+                    
+                    window.location.href = link.getAttribute('href');
+                });
+            });
+        });
+    </script>
+
 </body>
+
 </html>

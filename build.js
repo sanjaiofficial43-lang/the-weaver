@@ -187,7 +187,7 @@ let newUrls = '\\n  <!-- Products -->\\n';
 products.forEach(product => {
     newUrls += `
   <url>
-    <loc>https://theweavura.in/product/${product.slug}</loc>
+    <loc>https://www.theweavura.in/product/${product.slug}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
