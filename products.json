@@ -357,9 +357,9 @@
     ]
   },
   {
-    "id": "13",
-    "slug": "plum-teal-checked-handloom-cotton-saree",
-    "name": "Plum & Teal Handloom Cotton Saree with Peacock Pallu",
+    "id": "14",
+    "slug": "mauve-plum-checked-handloom-cotton-saree",
+    "name": "Mauve & Plum Handloom Cotton Saree",
     "category": [
       "Handloom Sarees",
       "Cotton Sarees",
@@ -367,24 +367,24 @@
     ],
     "fabric": "Cotton",
     "weavingType": "Handloom",
-    "colour": "Plum & Teal",
+    "colour": "Mauve",
     "price": 1600,
     "salePrice": null,
     "stockStatus": "In Stock",
-    "sku": "WVR-COT-013",
-    "description": "An exquisite plum handloom cotton saree featuring elegant gold checks and motifs on the body, beautifully contrasted by a vibrant teal pallu with intricate golden peacock designs. Comes with a pure zari border.",
+    "sku": "WVR-COT-014",
+    "description": "A beautiful handloom cotton saree featuring mauve and plum tones, elegant checks, and a contrasting border.",
     "sareeLength": "6.75 metres",
     "blouseIncluded": true,
-    "borderDetails": "Gold Zari Border",
+    "borderDetails": "Contrast Border",
     "images": [
-      "saree-plum-teal-1.jpg",
-      "saree-plum-teal-2.jpg",
-      "saree-plum-teal-3.jpg"
+      "saree-new-mix-1.jpg",
+      "saree-new-mix-2.jpg",
+      "saree-new-mix-3.jpg"
     ],
     "altText": [
-      "Plum checked handloom cotton saree folded",
-      "Teal pallu with golden peacock motifs",
-      "Plum body with gold checks and motifs"
+      "Saree folded view",
+      "Saree pallu detail",
+      "Saree body checks"
     ]
   }
 ]
