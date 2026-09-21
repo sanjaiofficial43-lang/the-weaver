@@ -202,7 +202,8 @@ console.log('Sitemap updated.');
 const collections = [
     { slug: 'handloom-cotton-sarees', name: 'Handloom Cotton Sarees', filter: p => p.category.includes('Handloom Sarees') },
     { slug: 'new-arrivals', name: 'New Arrivals', filter: p => p.category.includes('New Arrivals') },
-    { slug: 'bestsellers', name: 'Bestsellers', filter: p => p.category.includes('Bestsellers') }
+    { slug: 'bestsellers', name: 'Bestsellers', filter: p => p.category.includes('Bestsellers') },
+    { slug: 'silk-sarees', name: 'Silk Sarees', filter: p => p.category.includes('Silk Sarees') }
 ];
 
 function generateCollectionHtml(collection) {

@@ -267,21 +267,21 @@
   },
   {
     "id": "10",
-    "slug": "pink-handloom-cotton-saree-chariot-border",
-    "name": "Pink Handloom Cotton Saree with Chariot Border",
+    "slug": "pink-handloom-silk-saree-chariot-border",
+    "name": "Pink Handloom Silk Saree with Chariot Border",
     "category": [
       "Handloom Sarees",
-      "Cotton Sarees",
-      "Bestsellers"
+      "Bestsellers",
+      "Silk Sarees"
     ],
-    "fabric": "Cotton",
+    "fabric": "Silk",
     "weavingType": "Handloom",
     "colour": "Pink",
     "price": 4080,
     "salePrice": null,
     "stockStatus": "In Stock",
     "sku": "WVR-COT-010",
-    "description": "Delicate pink cotton saree woven with an intricate chariot border.",
+    "description": "Delicate pink silk saree woven with an intricate chariot border.",
     "sareeLength": "6.75 metres",
     "blouseIncluded": true,
     "borderDetails": "Chariot Border",
