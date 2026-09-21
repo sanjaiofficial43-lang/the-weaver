@@ -111,6 +111,7 @@
                 <li><a href="/collections/handloom-cotton-sarees" class="hover:text-maroon transition">Handloom Cotton Sarees</a></li>
                 <li><a href="/collections/new-arrivals" class="hover:text-maroon transition">New Arrivals</a></li>
                 <li><a href="/collections/bestsellers" class="hover:text-maroon transition">Bestsellers</a></li>
+                <li><a href="/weaving" class="hover:text-maroon transition">Weaving</a></li>
                 <!-- TODO: Create pages and unhide these when enough products exist: 
                 <li><a href="/collections/temple-border-cotton-sarees" class="hover:text-maroon transition">Temple Border</a></li>
                 <li><a href="/collections/checked-cotton-sarees" class="hover:text-maroon transition">Checked Sarees</a></li>
@@ -135,6 +136,7 @@
                 <li><a href="/collections/handloom-cotton-sarees" class="mobile-link block hover:text-maroon transition">Handloom Cotton Sarees</a></li>
                 <li><a href="/collections/new-arrivals" class="mobile-link block hover:text-maroon transition">New Arrivals</a></li>
                 <li><a href="/collections/bestsellers" class="mobile-link block hover:text-maroon transition">Bestsellers</a></li>
+                <li><a href="/weaving" class="mobile-link block hover:text-maroon transition">Weaving</a></li>
                 <!-- TODO: Unhide when enough products exist:
                 <li><a href="/collections/temple-border-cotton-sarees" class="mobile-link block hover:text-maroon transition">Temple Border</a></li>
                 -->
@@ -363,9 +365,32 @@
             }
             
             if (checkoutBtn) {
-                checkoutBtn.addEventListener('click', () => {
-                    alert('Proceeding to checkout...');
-                    window.location.href = 'checkout.html';
+                checkoutBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    if (checkoutBtn.disabled) return;
+                    
+                    // Prevent multiple clicks
+                    checkoutBtn.disabled = true;
+                    const originalText = checkoutBtn.innerText;
+                    checkoutBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
+                    checkoutBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+                    try {
+                        // Pass cart data correctly
+                        localStorage.setItem('weavura_cart', JSON.stringify(cartItems));
+                        
+                        // Simulate API request timeout
+                        await new Promise((resolve) => setTimeout(resolve, 1500));
+                        
+                        // Redirect to intended checkout page
+                        window.location.href = '/checkout';
+                    } catch (error) {
+                        console.error('Checkout error:', error);
+                        alert('An error occurred during checkout. Please try again.');
+                        checkoutBtn.disabled = false;
+                        checkoutBtn.innerText = originalText;
+                        checkoutBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                    }
                 });
             }
 

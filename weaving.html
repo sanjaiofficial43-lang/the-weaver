@@ -1,0 +1,195 @@
+<!-- Hero Section -->
+<section class="relative bg-[#2A1B28] text-[#FBF7F0] pt-24 pb-32 overflow-hidden border-b-[6px] border-[#C09C3C]">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23FBF7F0\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    <div class="container mx-auto px-4 text-center relative z-10 max-w-4xl">
+        <h1 class="text-5xl md:text-7xl serif-font font-medium mb-6 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#FBF7F0] via-[#C09C3C] to-[#FBF7F0]">The Art of Weaving</h1>
+        <p class="text-lg md:text-xl font-light tracking-widest uppercase mb-12 text-[#C09C3C]">From thread to timeless elegance &mdash; discover the craftsmanship behind every saree.</p>
+        <div class="w-24 h-[1px] bg-[#C09C3C] mx-auto opacity-50"></div>
+    </div>
+</section>
+
+<!-- Main Video Section -->
+<section class="py-20 bg-[#FBF7F0]">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center mb-12">
+            <h3 class="text-sm uppercase tracking-widest text-[#136F63] mb-2 font-medium">Immerse Yourself</h3>
+            <h2 class="text-4xl md:text-5xl font-medium serif-font mb-4 text-[#2A1B28]">Watch the Weaving Process</h2>
+            <div class="w-16 h-[2px] bg-[#C09C3C] mx-auto mt-6"></div>
+        </div>
+        
+        <div class="relative w-full rounded-sm overflow-hidden shadow-2xl border border-[#e5dccf] group">
+            <video id="main-video" class="w-full h-auto aspect-video object-cover" poster="https://images.unsplash.com/photo-1605001082531-2798e29e9305?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" controls preload="none">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Custom Play Button Overlay for Poster -->
+            <div id="main-video-overlay" class="absolute inset-0 bg-[#2A1B28]/20 flex items-center justify-center cursor-pointer transition duration-300 group-hover:bg-[#2A1B28]/10" onclick="document.getElementById('main-video').play(); this.style.display='none';">
+                <div class="w-20 h-20 bg-[#FBF7F0]/90 rounded-full flex items-center justify-center text-[#2A1B28] shadow-lg hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-play text-2xl ml-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Story Section (Timeline) -->
+<section class="py-24 bg-white relative overflow-hidden">
+    <div class="absolute right-0 top-0 w-64 h-64 bg-[#FBF7F0] rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute left-0 bottom-0 w-80 h-80 bg-[#136F63]/5 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
+    
+    <div class="container mx-auto px-4 max-w-6xl relative z-10">
+        <div class="text-center mb-16">
+            <h3 class="text-sm uppercase tracking-widest text-[#C09C3C] mb-2 font-medium">The Process</h3>
+            <h2 class="text-4xl md:text-5xl font-medium serif-font mb-4 text-[#2A1B28]">Where Every Thread Tells a Story</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto tracking-wide">The journey of a handloom saree is one of patience, precision, and passion. Step into our world and see how raw cotton transforms into a masterpiece.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4 relative">
+            <!-- Connecting Line for Desktop -->
+            <div class="hidden md:block absolute top-[45px] left-10 right-10 h-[1px] bg-[#e5dccf] z-0"></div>
+            
+            <!-- Step 1 -->
+            <div class="text-center relative z-10">
+                <div class="w-24 h-24 mx-auto bg-[#FBF7F0] border-2 border-[#C09C3C] rounded-full flex items-center justify-center text-3xl text-[#2A1B28] font-light serif-font mb-6 shadow-sm hover:bg-[#2A1B28] hover:text-[#C09C3C] transition-colors duration-500">01</div>
+                <h4 class="text-lg serif-font font-medium text-[#2A1B28] mb-2 uppercase tracking-widest">Selecting the Yarn</h4>
+                <p class="text-sm text-gray-500 leading-relaxed px-2">We source the finest pure cotton yarn, ensuring strength and softness.</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="text-center relative z-10">
+                <div class="w-24 h-24 mx-auto bg-[#FBF7F0] border-2 border-[#C09C3C] rounded-full flex items-center justify-center text-3xl text-[#2A1B28] font-light serif-font mb-6 shadow-sm hover:bg-[#2A1B28] hover:text-[#C09C3C] transition-colors duration-500">02</div>
+                <h4 class="text-lg serif-font font-medium text-[#2A1B28] mb-2 uppercase tracking-widest">Preparing the Loom</h4>
+                <p class="text-sm text-gray-500 leading-relaxed px-2">The warp and weft threads are painstakingly aligned on traditional handlooms.</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="text-center relative z-10">
+                <div class="w-24 h-24 mx-auto bg-[#FBF7F0] border-2 border-[#C09C3C] rounded-full flex items-center justify-center text-3xl text-[#2A1B28] font-light serif-font mb-6 shadow-sm hover:bg-[#2A1B28] hover:text-[#C09C3C] transition-colors duration-500">03</div>
+                <h4 class="text-lg serif-font font-medium text-[#2A1B28] mb-2 uppercase tracking-widest">Weaving the Body</h4>
+                <p class="text-sm text-gray-500 leading-relaxed px-2">Skilled artisans interlace the threads, bringing the saree's vibrant body to life.</p>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="text-center relative z-10">
+                <div class="w-24 h-24 mx-auto bg-[#FBF7F0] border-2 border-[#C09C3C] rounded-full flex items-center justify-center text-3xl text-[#2A1B28] font-light serif-font mb-6 shadow-sm hover:bg-[#2A1B28] hover:text-[#C09C3C] transition-colors duration-500">04</div>
+                <h4 class="text-lg serif-font font-medium text-[#2A1B28] mb-2 uppercase tracking-widest">Creating the Border</h4>
+                <p class="text-sm text-gray-500 leading-relaxed px-2">Intricate motifs and contrast borders are woven using specialized techniques.</p>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="text-center relative z-10">
+                <div class="w-24 h-24 mx-auto bg-[#FBF7F0] border-2 border-[#C09C3C] rounded-full flex items-center justify-center text-3xl text-[#2A1B28] font-light serif-font mb-6 shadow-sm hover:bg-[#2A1B28] hover:text-[#C09C3C] transition-colors duration-500">05</div>
+                <h4 class="text-lg serif-font font-medium text-[#2A1B28] mb-2 uppercase tracking-widest">Quality Check</h4>
+                <p class="text-sm text-gray-500 leading-relaxed px-2">Every saree is meticulously inspected before it leaves our Madurai looms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Multiple Weaving Videos Gallery -->
+<section class="py-20 bg-[#FBF7F0]">
+    <div class="container mx-auto px-4 max-w-7xl">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-medium serif-font mb-4 text-[#2A1B28]">Moments on the Loom</h2>
+            <div class="w-12 h-[2px] bg-[#136F63] mx-auto"></div>
+        </div>
+        
+        <div id="video-gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Videos will be injected here via JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Craftsmanship Section -->
+<section class="py-24 bg-[#2A1B28] text-white">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <i class="fas fa-hands text-4xl text-[#C09C3C] mb-6"></i>
+        <h2 class="text-3xl md:text-5xl font-medium serif-font mb-6 tracking-wide">Authentic Craftsmanship</h2>
+        <p class="text-lg text-gray-300 font-light leading-relaxed mb-8">
+            Our sarees are the result of generations of knowledge passed down through weavers in Madurai. 
+            We take pride in our 100% handloom process, ensuring that every drape you wear carries the soul of the artisan. 
+            There are no shortcuts in our craft — only an unwavering dedication to quality, tradition, and timeless beauty.
+        </p>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-24 bg-white text-center border-b border-[#e5dccf]">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-medium serif-font mb-6 text-[#2A1B28]">Discover the Sarees Behind the Craft</h2>
+        <p class="text-gray-600 mb-10 tracking-wide">Explore our exquisite collection of handwoven cotton sarees, brought directly from our looms to your wardrobe.</p>
+        <a href="/collections/handloom-cotton-sarees" class="inline-block bg-[#540C0C] text-white px-10 py-4 uppercase text-sm tracking-widest font-semibold hover:bg-[#2A1B28] transition duration-300 shadow-md">
+            Explore Sarees
+        </a>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script>
+    // Video Management Data Structure
+    const videos = [
+        {
+            title: "Preparing the Loom",
+            description: "The delicate process of aligning warp threads before weaving begins.",
+            videoUrl: "", // Add actual MP4 URL here
+            thumbnail: "https://images.unsplash.com/photo-1605001082531-2798e29e9305?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            title: "The Art of Hand Weaving",
+            description: "Listen to the rhythmic heartbeat of the traditional Madurai loom.",
+            videoUrl: "",
+            thumbnail: "https://images.unsplash.com/photo-1588691518174-8eb74ff0c7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            title: "Creating the Saree Border",
+            description: "Weaving the intricate zari borders that frame the saree's body.",
+            videoUrl: "",
+            thumbnail: "https://images.unsplash.com/photo-1584559582128-b8be73991275?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            title: "Weaving the Final Design",
+            description: "The final touches as the complete masterpiece emerges from the threads.",
+            videoUrl: "",
+            thumbnail: "https://images.unsplash.com/photo-1620610543666-4aa71fb02db3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+        }
+    ];
+
+    // Render Video Gallery
+    const galleryContainer = document.getElementById('video-gallery');
+    
+    videos.forEach((video, index) => {
+        const videoCard = document.createElement('div');
+        videoCard.className = 'group flex flex-col bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-[#e5dccf]';
+        
+        videoCard.innerHTML = \`
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 cursor-pointer" onclick="playGalleryVideo(\${index})">
+                <img src="\${video.thumbnail}" alt="\${video.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#2A1B28]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="w-12 h-12 bg-[#FBF7F0]/90 rounded-full flex items-center justify-center text-[#2A1B28] shadow-md">
+                        <i class="fas fa-play ml-1"></i>
+                    </div>
+                </div>
+                <!-- Hidden Video Element for easy playback if URL provided -->
+                <video id="gallery-video-\${index}" class="hidden absolute inset-0 w-full h-full object-cover z-10" controls preload="none">
+                    <source src="\${video.videoUrl}" type="video/mp4">
+                </video>
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+                <h4 class="text-lg serif-font font-semibold text-[#2A1B28] mb-2">\${video.title}</h4>
+                <p class="text-sm text-gray-500 leading-relaxed flex-grow">\${video.description}</p>
+            </div>
+        \`;
+        galleryContainer.appendChild(videoCard);
+    });
+
+    // Simple play function for gallery (when actual URLs are added)
+    function playGalleryVideo(index) {
+        const videoEl = document.getElementById(\`gallery-video-\${index}\`);
+        if (videoEl && videoEl.querySelector('source').getAttribute('src')) {
+            videoEl.classList.remove('hidden');
+            videoEl.play();
+        } else {
+            alert('Video coming soon! Please add the MP4 URL in the code.');
+        }
+    }
+</script>
