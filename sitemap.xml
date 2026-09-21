@@ -35,7 +35,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
-\n  \n  \n  \n  \n  <!-- Products -->\n
+\n  \n  \n  \n  \n  \n  <!-- Products -->\n
   <url>
     <loc>https://www.theweavura.in/product/maroon-green-handloom-cotton-saree</loc>
     <lastmod>2026-09-21</lastmod>
@@ -104,6 +104,12 @@
   </url>
   <url>
     <loc>https://www.theweavura.in/product/mauve-orange-checked-handloom-cotton-saree</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theweavura.in/product/plum-teal-checked-handloom-cotton-saree</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
